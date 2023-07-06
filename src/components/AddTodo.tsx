@@ -1,8 +1,11 @@
 'use client';
+import { useTodos } from '@/store/todos';
 import React, { useState } from 'react';
 
 const AddTodo = () => {
   const [todo, setTodo] = useState('');
+
+  const { handleAddTodo } = useTodos();
 
   const handleFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
