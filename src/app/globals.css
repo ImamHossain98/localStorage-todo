@@ -109,7 +109,7 @@ label{
 /*todo task list */
 /*====================*/
 
-.main-task li{
+ul li{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
@@ -118,20 +118,20 @@ label{
     border-bottom: .1rem solid #ccc;
 }
 
-.main-task li:first-child{
+ul li:first-child{
     border-top: .1rem solid #ccc;
 }
 
-.main-task li:hover{
+ul li:hover{
     background-color: #fef2f2;
 }
 
-.main-task li input[type="checkbox"]:checked  + label {
+ul li input[type="checkbox"]:checked  + label {
     text-decoration: line-through;
     color: #D14D72;
 }
 
-.main-task li button{
+ul li button{
     padding: .6rem 1rem;
     width: 7rem;
     background-color: #D14D72;
